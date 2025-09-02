@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustAnswer - Instant Expert Answers</title>
+    <link rel="stylesheet" href="style.css"> <!-- You'd link your CSS file here -->
+    <style>
+        /* Basic inline styles for demonstration. You should use an external CSS file. */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .hero { background-color: #f4f8fb; text-align: center; padding: 80px 20px; }
+        .hero h1 { font-size: 3.5em; margin-bottom: 15px; color: #1a2a4e; }
+        .hero p { font-size: 1.5em; margin-bottom: 40px; color: #555; }
+        .btn { display: inline-block; background-color: #007bff; color: white; padding: 15px 30px; border-radius: 5px; text-decoration: none; font-size: 1.2em; font-weight: bold; transition: background-color 0.3s ease; }
+        .btn:hover { background-color: #0056b3; }
+        .section { padding: 60px 20px; text-align: center; }
+        .section h2 { font-size: 2.5em; margin-bottom: 40px; color: #1a2a4e; }
+        .grid-3-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; text-align: left; }
+        .feature-item { text-align: center; padding: 20px; border-radius: 8px; background-color: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .feature-item img { max-width: 80px; margin-bottom: 20px; }
+        .feature-item h3 { font-size: 1.5em; color: #1a2a4e; margin-bottom: 10px; }
+        .how-it-works-steps { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 30px; margin-top: 40px; }
+        .step { flex: 1 1 300px; padding: 30px; background-color: #e9f0f7; border-radius: 8px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.03); }
+        .step .step-number { font-size: 2em; font-weight: bold; color: #007bff; margin-bottom: 15px; }
+        .step h3 { font-size: 1.8em; color: #1a2a4e; margin-bottom: 10px; }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .testimonial-card { background-color: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: left; }
+        .testimonial-card p { font-style: italic; margin-bottom: 15px; }
+        .testimonial-card .author { font-weight: bold; color: #007bff; }
+        .cta-section { background-color: #007bff; color: white; padding: 60px 20px; text-align: center; }
+        .cta-section h2 { color: white; margin-bottom: 30px; }
+        .faq-item { background-color: #fff; border-bottom: 1px solid #eee; margin-bottom: 10px; border-radius: 5px; text-align: left;}
+        .faq-item input[type="checkbox"] { display: none; }
+        .faq-item label { display: block; padding: 20px; font-size: 1.2em; font-weight: bold; cursor: pointer; position: relative; }
+        .faq-item label::after { content: '+'; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 1.5em; transition: transform 0.3s ease; }
+        .faq-item input[type="checkbox"]:checked + label::after { content: '-'; transform: translateY(-50%) rotate(0deg); }
+        .faq-item .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out, padding 0.3s ease-out; padding: 0 20px; }
+        .faq-item input[type="checkbox"]:checked ~ .faq-content { max-height: 150px; padding-bottom: 20px; } /* Adjust max-height as needed */
+        .footer { background-color: #222; color: white; text-align: center; padding: 40px 20px; font-size: 0.9em; }
+        .footer a { color: #007bff; text-decoration: none; margin: 0 10px; }
+        .footer a:hover { text-decoration: underline; }
+        .full-width-image { width: 100%; height: auto; display: block; margin: 20px 0; } /* For generated images */
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Instant Expert Answers for Every Question You Have.</h1>
+            <p>Connect Live with Doctors, Lawyers, Technicians, and Thousands of Other Verified Experts, 24/7.</p>
+            <a href="YOUR_JUSTANSWER_REFERRAL_LINK" class="btn">Ask an Expert Now!</a>
+            <p style="margin-top: 15px; font-size: 0.9em; color: #777;">Trusted by millions. Rated 4.8/5 Stars.</p>
+            
+            <!-- Hero Image -->
+            <img src="your_hero_image_url.jpg" alt="Experts connecting with users online" class="full-width-image"> 
+            
+        </div>
+    </section>
+
+    <!-- Why Choose JustAnswer Section -->
+    <section class="section" style="background-color: #f9f9f9;">
+        <div class="container">
+            <h2>Why Get Your Answers from JustAnswer?</h2>
+            <div class="grid-3-col">
+                <div class="feature-item">
+                    <!-- Icon for Access Experts Anytime -->
+                    <h3>Access Experts Anytime</h3>
+                    <p>No appointments needed. Verified experts are available day and night to assist you.</p>
+                </div>
+                <div class="feature-item">
+                    <!-- Icon for Broad Range of Expertise -->
+                    <h3>Broad Range of Expertise</h3>
+                    <p>From health, legal, automotive, and home repair to tech support and pet care – we have an expert for every query.</p>
+                </div>
+                <div class="feature-item">
+                    <!-- Icon for Fast, Reliable & Verified Advice -->
+                    <h3>Fast, Reliable & Verified Advice</h3>
+                    <p>Get the accurate, professional solutions you need, directly from pre-vetted professionals you can trust.</p>
+                </div>
+                <div class="feature-item">
+                     <!-- Icon for Save Time & Money -->
+                    <h3>Save Time & Money</h3>
+                    <p>Avoid unnecessary in-person visits and get expert insights from the comfort of your home, saving you both time and expense.</p>
+                </div>
+            </div>
+            
+            <!-- Visual for Why Choose JustAnswer (icons) -->
+            <img src="your_why_choose_image_url.jpg" alt="JustAnswer benefits icons" class="full-width-image">
+            
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Getting Your Answers is Easy: How It Works</h2>
+            <div class="how-it-works-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Ask Your Question</h3>
+                    <p>Describe your situation or question in detail. The more information, the better!</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Connect with an Expert</h3>
+                    <p>Our smart system quickly matches you with a qualified expert available to help.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Get Your Answer & Solutions</h3>
+                    <p>Receive personalized advice and solutions directly from your expert, and follow up if needed.</p>
+                </div>
+            </div>
+            
+            <!-- Visual for How It Works -->
+            <img src="your_how_it_works_image_url.jpg" alt="Three steps for using JustAnswer" class="full-width-image">
+            
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section" style="background-color: #f4f8fb;">
+        <div class="container">
+            <h2>What Our Users Are Saying</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"Absolutely brilliant! I got crucial legal advice within minutes. Saved me a lot of stress and a costly lawyer's visit."</p>
+                    <div class="author">- Anna S., Satisfied User</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The vet on JustAnswer provided life-saving advice for my dog late at night when no clinics were open. Highly recommend!"</p>
+                    <div class="author">- Mark P., Pet Owner</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"My car trouble was fixed thanks to a mechanic on JustAnswer. Clear, concise, and incredibly helpful guidance."</p>
+                    <div class="author">- Sarah J., Car Enthusiast</div>
+                </div>
+            </div>
+            
+            <!-- Visual for Testimonials (optional, e.g., star ratings or user avatars) -->
+            <img src="your_testimonials_image_url.jpg" alt="Customer testimonials with star ratings" class="full-width-image">
+            
+        </div>
+    </section>
+
+    <!-- Final Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Don't Wait! Get Expert Answers Now!</h2>
+            <p style="font-size: 1.3em; margin-bottom: 40px;">Stop searching endlessly and start getting real answers from real experts.</p>
+            <a href="YOUR_JUSTANSWER_REFERRAL_LINK" class="btn">Ask Your First Question</a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            <h2>Common Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <input type="checkbox" id="faq1">
+                    <label for="faq1">Is JustAnswer legitimate?</label>
+                    <div class="faq-content">
+                        <p>Yes, JustAnswer has been connecting users with verified experts for over 15 years, with millions of questions answered globally. Our experts undergo a rigorous vetting process.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq2">
+                    <label for="faq2">How much does it cost?</label>
+                    <div class="faq-content">
+                        <p>Pricing varies based on the type of question and expert. You'll see the cost clearly before you commit, and often, it's a fraction of traditional consultation fees.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq3">
+                    <label for="faq3">Are the experts truly qualified?</label>
+                    <div class="faq-content">
+                        <p>Absolutely. All experts are rigorously vetted, verified, and continually reviewed for their credentials and experience in their respective fields to ensure you get top-notch advice.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq4">
+                    <label for="faq4">Is my information confidential?</label>
+                    <div class="faq-content">
+                        <p>Your privacy is paramount. All interactions on JustAnswer are secure and confidential. We are committed to protecting your personal information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Powered by JustAnswer | &copy; 2023 [Your Website Name]. All rights reserved.</p>
+            <p>
+                <a href="https://www.justanswer.com/" target="_blank">Visit JustAnswer.com</a> |
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
